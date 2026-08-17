@@ -1,4 +1,4 @@
-# Affiliate.top landing page
+# DEVSYSMIN landing page
 
 Static one-page website prepared for GitHub Pages and a custom domain.
 
@@ -7,7 +7,6 @@ Static one-page website prepared for GitHub Pages and a custom domain.
 - `index.html` - page content
 - `styles.css` - layout, responsive styles and palette
 - `script.js` - mobile navigation and reveal animations
-- `assets/affiliate-top-logo.png` - provided Affiliate.top logo
 - `assets/product-visual.svg` - custom hero illustration
 - `assets/favicon.svg` - browser icon
 - `CNAME.example` - custom-domain template

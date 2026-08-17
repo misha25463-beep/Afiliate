@@ -87,7 +87,36 @@ button, a { -webkit-tap-highlight-color: transparent; }
   justify-content: space-between;
   gap: 28px;
 }
-.brand img { width: 188px; height: auto; }
+.brand-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #f7f9fb;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.brand-mark,
+.mini-logo-mark {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.16), rgba(255,255,255,.02)),
+    linear-gradient(135deg, var(--blue), var(--teal) 72%, var(--green));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 8px 22px rgba(75,140,255,.18);
+  position: relative;
+}
+.brand-mark::after,
+.mini-logo-mark::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 2px solid rgba(255,255,255,.78);
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
 .nav { display: flex; gap: 32px; margin-left: auto; }
 .nav a {
   color: #aeb8c3;
@@ -245,7 +274,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background-size: 36px 36px;
 }
 .gradient-strip::after {
-  content: "AFFILIATE.TOP";
+  content: "SOFTWARE • GROWTH";
   position: absolute;
   right: max(20px, calc((100% - var(--shell))/2));
   top: 50%;
@@ -487,7 +516,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
     radial-gradient(circle at 95% 54%, rgba(56,215,192,.12), transparent 28%),
     #0a0f15;
 }
-.mini-logo img { width: 112px; }
+.mini-logo-mark { width: 34px; height: 34px; }
 .mini-tag { margin-top: 45px; color: #84909b; text-transform: uppercase; letter-spacing: .13em; font-weight: 850; font-size: 7px; }
 .mini-title { margin-top: 8px; font-weight: 950; font-size: 27px; line-height: .98; letter-spacing: -.055em; }
 .mini-title span { color: #73dec6; }
@@ -518,7 +547,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-footer { padding: 60px 0 24px; background: #05070a; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr .6fr 1fr; gap: 50px; padding-bottom: 42px; }
-.footer-brand img { width: 178px; }
+.footer-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 16px;
+}
+.footer-wordmark strong {
+  font-size: 14px;
+  letter-spacing: .12em;
+}
 .footer-brand p { margin: 16px 0 0; color: #697581; font-size: 12px; max-width: 300px; line-height: 1.65; }
 .footer-links { display: flex; flex-direction: column; gap: 12px; font-size: 12px; color: #98a3ad; }
 .footer-links a:hover { color: white; }
