@@ -274,7 +274,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background-size: 36px 36px;
 }
 .gradient-strip::after {
-  content: "SOFTWARE • GROWTH";
+  content: "SOFTWARE • APPLICATIONS";
   position: absolute;
   right: max(20px, calc((100% - var(--shell))/2));
   top: 50%;
