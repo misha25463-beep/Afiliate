@@ -544,6 +544,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .company-row:last-child { border-bottom: 0; }
 .company-row span { color: #667482; font-size: 12px; }
 .company-row strong { color: #edf1f4; font-size: 14px; line-height: 1.5; }
+.inline-email { color: #c7f36a; text-decoration: none; transition: color .2s ease; }
+.inline-email:hover { color: #e4ffad; }
 
 .site-footer { padding: 60px 0 24px; background: #05070a; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr .6fr 1fr; gap: 50px; padding-bottom: 42px; }
@@ -562,6 +564,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-links a:hover { color: white; }
 .footer-legal { display: flex; flex-direction: column; gap: 8px; color: #65717c; font-size: 11px; line-height: 1.55; }
 .footer-legal strong { color: #cdd4da; font-size: 12px; }
+.footer-email { color: #8f9aa5; }
+.footer-email:hover { color: #c7f36a; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.065); padding-top: 20px; display: flex; justify-content: space-between; color: #55616c; font-size: 10px; }
 
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .72s ease, transform .72s ease; }
